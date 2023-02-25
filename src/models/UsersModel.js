@@ -8,7 +8,7 @@ const userSchema = new Schema({
     },
     lastName: {
         type: String,
-
+        required: true
     },
     email: {
         type: String,
@@ -45,6 +45,6 @@ const userSchema = new Schema({
         versionKey: false
     });
 
-const User = mongoose.model("User", userSchema);
+const UsersModel = mongoose.model("Users", userSchema);
 
-module.exports = User;
+module.exports = UsersModel;

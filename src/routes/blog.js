@@ -13,6 +13,8 @@ router.get('/getPosts', blogController.getPosts)
 router.get('/getSinglePost/:id',  blogController.getSinglePost)
 router.post('/updateSinglePost/:id', AuthVerify, RoleVerify, blogController.updateSinglePost)
 router.get('/removeSinglePost/:id', AuthVerify, RoleVerify, blogController.removeSinglePost)
+router.get('/searchPosts/:searchValue',  blogController.searchPosts)
+router.get('/getPostsbyAuthor/:authorId',  blogController.getPostsbyAuthor)
 
 
 

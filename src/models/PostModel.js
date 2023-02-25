@@ -19,9 +19,10 @@ const postSchema = mongoose.Schema(
             type: String,
             required: true
         },
-        email: {
-            type: String,
-            required: true
+        authorId: {
+            type: mongoose.Schema.Types.ObjectId,
+            required: true,
+            ref: "Users"
         },
         createdDate: {
             type: Date,
@@ -31,6 +32,6 @@ const postSchema = mongoose.Schema(
     }, { versionKey: false }
 )
 
-const postModel = mongoose.model('posts', postSchema);
+const postModel = mongoose.model('Posts', postSchema);
 
 module.exports = postModel;
