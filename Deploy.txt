@@ -1,0 +1,9 @@
+
+BaseURL: https://nice-gold-zebra-robe.cyclic.app
+
+
+author & admin
+email: admin@me.com
+pass: 123
+
+Admin can give the role of author to registered users
