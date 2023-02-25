@@ -1,5 +1,6 @@
 
-BaseURL: https://nice-gold-zebra-robe.cyclic.app
+BaseURL: https://nice-gold-zebra-robe.cyclic.app/api/v1/
+API Status: https://nice-gold-zebra-robe.cyclic.app/api/v1/health
 
 
 author & admin
