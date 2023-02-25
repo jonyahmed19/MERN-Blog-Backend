@@ -8,7 +8,7 @@ const rateLimit = require("express-rate-limiter");
 const xss = require("xss-clean");
 const mongoSanitize = require("express-mongo-sanitize");
 const hpp = require("hpp");
-const morgan = require('morgan');
+
 const { readdirSync } = require("fs");
 /**
  * Global middlewares
@@ -39,7 +39,7 @@ app.use(
 /**
  * Development router
  */
-app.use(morgan('dev'))
+
 
 
 /**
